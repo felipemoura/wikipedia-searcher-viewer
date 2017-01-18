@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+	<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="css/wikipedia.css">
+	<link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Work+Sans">
+
+	<title>Wikipedia Viewer</title>
+</head>
+
+<body>
+
+
+	<!-- Simple view -->
+	<div class="container">
+		<h1><img src="https://upload.wikimedia.org/wikipedia/commons/d/de/Wikipedia_Logo_1.0.png" alt="wikipedialogo"> Wikipedia Viewer</h1>
+		<p> Go to some <a href="https://en.wikipedia.org/wiki/Special:Random" target="_blank"> Random Wikipedia Page </a></p>
+		
+		<div class="input-group">
+			<input type="text" class="form-control" id="searchWiki" placeholder="Search Wikipedia" maxlength="512">
+			<span class="input-group-btn">
+				<button id="search" class="btn btn-default" type="button"><span class="glyphicon glyphicon-search"></span></button>
+			</span>
+		</div><!-- /input-group -->
+		
+		<div class="lists"></div>
+	</div>
+
+	<!-- Footer -->
+	<footer class="text-center">
+		<p class="author"> made by <a href="https://codepen.io/felpmoura" target="_blank" style="font-weight: 300;">Felipe</a></p>
+	</footer>
+
+
+	<script src="js/jquery.min.js"></script>
+	<script src="js/bootstrap.min.js"></script>
+	<script src="js/wikipedia.js"></script>
+
+</body>
+</html>
