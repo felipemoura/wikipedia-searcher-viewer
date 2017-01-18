@@ -28,7 +28,7 @@ $(document).ready(function() {
 	function searchWiki (value) {
 		$('.list').empty();
 
-		var url = 'http://en.wikipedia.org/w/api.php?action=query&formatversion=2&generator=search&utf8=1&gsrsearch=' + encodeURIComponent(value) +'&prop=extracts&exintro=1&explaintext&exlimit=20&exchars=200&format=json&callback=?';
+		var url = 'https://en.wikipedia.org/w/api.php?action=query&formatversion=2&generator=search&utf8=1&gsrsearch=' + encodeURIComponent(value) +'&prop=extracts&exintro=1&explaintext&exlimit=20&exchars=200&format=json&callback=?';
 		console.log(url);
 		$.getJSON(url, function( data ) {
 
